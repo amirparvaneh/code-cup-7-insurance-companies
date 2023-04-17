@@ -24,4 +24,7 @@ public class InsuranceEntity {
     private String name;
     private Double price;
     private LocalDateTime created_at;
+    @ManyToOne
+    @JoinColumn(name = "company_id")
+    private CompanyEntity company;
 }
