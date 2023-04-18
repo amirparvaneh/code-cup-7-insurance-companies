@@ -23,8 +23,8 @@ public class SwaggerConfig {
     }
 
     private ApiInfo metaInfo() {
-        return new ApiInfoBuilder().title("Book Store")
-                .description("Java Spring Boot Application that Represents a Simple Bookstore.")
+        return new ApiInfoBuilder().title("insurance")
+                .description("java code cup 7 - question bime.")
                 .version("1.0")
                 .build();
     }

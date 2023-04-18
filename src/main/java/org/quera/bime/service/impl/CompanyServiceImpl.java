@@ -1,10 +1,10 @@
 package org.quera.bime.service.impl;
 
-import org.quera.bime.dto.CompanyRequest;
 import org.quera.bime.model.CompanyEntity;
 import org.quera.bime.repository.CompanyRepository;
 import org.quera.bime.service.CompanyService;
 import org.springframework.stereotype.Service;
+import java.util.Optional;
 
 
 @Service
@@ -18,11 +18,13 @@ public class CompanyServiceImpl implements CompanyService {
 
     @Override
     public void save(CompanyEntity companyEntity) {
-
+        companyRepository.save(companyEntity);
     }
 
     @Override
     public CompanyEntity findOne(Long id) {
-        return null;
+        Optional<CompanyEntity> companyEntity;
+        companyEntity = companyRepository.findById(id);
+        return companyEntity.get();
     }
 }
