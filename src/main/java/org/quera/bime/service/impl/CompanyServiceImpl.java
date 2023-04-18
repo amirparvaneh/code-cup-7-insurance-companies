@@ -1,5 +1,6 @@
 package org.quera.bime.service.impl;
 
+import org.quera.bime.dto.CompanyRequest;
 import org.quera.bime.model.CompanyEntity;
 import org.quera.bime.repository.CompanyRepository;
 import org.quera.bime.service.CompanyService;
