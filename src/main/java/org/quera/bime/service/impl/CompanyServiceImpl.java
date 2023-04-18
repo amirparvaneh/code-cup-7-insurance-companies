@@ -25,6 +25,6 @@ public class CompanyServiceImpl implements CompanyService {
     public CompanyEntity findOne(Long id) {
         Optional<CompanyEntity> companyEntity;
         companyEntity = companyRepository.findById(id);
-        return companyEntity.get();
+        return companyEntity.orElse(null);
     }
 }

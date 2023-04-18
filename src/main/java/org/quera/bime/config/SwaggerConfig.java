@@ -24,7 +24,7 @@ public class SwaggerConfig {
 
     private ApiInfo metaInfo() {
         return new ApiInfoBuilder().title("insurance")
-                .description("java code cup 7 - question bime.")
+                .description("java code cup 7 - bime question.")
                 .version("1.0")
                 .build();
     }
