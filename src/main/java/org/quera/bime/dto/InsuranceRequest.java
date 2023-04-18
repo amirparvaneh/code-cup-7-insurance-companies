@@ -1,5 +1,12 @@
 package org.quera.bime.dto;
 
-public class InsuranceRequest {
+import lombok.Getter;
+import lombok.Setter;
+
+import java.io.Serializable;
+
+@Getter
+@Setter
+public class InsuranceRequest implements Serializable {
 
 }
